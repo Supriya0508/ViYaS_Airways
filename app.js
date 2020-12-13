@@ -8,7 +8,7 @@ const ticket = require('./database/ticket');
 const crew = require('./database/crew');
 const path = require('path');
 const { Console } = require("console");
-const hostname = "localhost";
+//const hostname = "localhost";
 let port = process.env.PORT || 3000;
 http = require("http");
 const server = http.createServer(app);
@@ -282,7 +282,7 @@ app.post('/ticket',middleware.mid_ware2,(req,res)=>{
 
 
 // Sever running -----------------------------------------------------------
-server.listen(port, hostname, ()=>{
+server.listen(port,()=>{
     console.log("Server running")
 })
 

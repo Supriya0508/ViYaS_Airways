@@ -1,15 +1,14 @@
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host     : 'sql3.freesqldatabase.com',
-    user     : 'sql3381692',
-    password : 'FgcZrd6KrF',
-    database : 'sql3381692',
-    multipleStatements : true,
-    port : 3306
+    host: 'localhost',
+    user: 'root',
+    password: 'sslv1234*',
+    database: 'VIYAS_AIRWAYS',
+    multipleStatements: true
 });
 
-connection.connect(function(err) {
+connection.connect(function (err) {
     if (err) throw err;
 });
 
